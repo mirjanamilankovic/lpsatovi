@@ -1,0 +1,759 @@
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?sp31ml');
+  src:  url('../fonts/icomoon.eot?sp31ml#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?sp31ml') format('truetype'),
+    url('../fonts/icomoon.woff?sp31ml') format('woff'),
+    url('../fonts/icomoon.svg?sp31ml#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
+
+
+
+ body {
+	background-color: white;
+    font-size: 16px;
+    font-family: 'Open Sans',serif;
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+.wrap{
+    margin: 0 auto;
+	max-width: 1200px;
+    padding: 0 2%;
+}
+
+.slika {
+    padding-top:40px;
+}
+.navigation {
+    display: inline-flex;
+    float:right;
+    padding-top:65px;
+    color:#a0a0a0;
+    text-transform:none;
+}
+
+    .navigation li:first-child a {
+        margin-right: 30px;
+    }
+    
+    .navigation a:hover{
+    background-color: yellow;
+}
+
+    .navigation a {
+        color:#464646;
+        padding:16px;
+        
+    }
+
+
+.site-main {
+    padding: 20px 0;
+}
+
+
+
+/* HERO BLOCK */
+    
+.hero {
+    min-height:580px;
+    background-color:#535353;
+    position:relative;
+    background-image: url("../images/wood-night-camera-vintage.jpg");
+    background-repeat:no no-repeat;
+    background-size:cover;
+    background-position: center;
+   
+}
+    .hero__info {
+        position:absolute;
+        bottom:-19px;
+        right:2px;
+
+    }
+        .hero__info__subtitle {
+            text-transform: uppercase;
+            font-style: italic;
+            color:#fff;
+            font-size: 30px;
+            margin:0 0 15px 0;
+        }
+
+        .hero__info__title {
+            text-transform: uppercase;
+            color:#fff;
+            font-size:65px;
+            margin:0;
+        }
+
+/*PRODUCTS BLOCK */
+
+.products__title{
+    color:#1bbc9b;
+    font-size:25px;
+    font-weight: bold;
+}
+
+    .products__title span{
+        color:#1bbc9b;
+        font-weight:normal;
+    }
+
+.products-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.product{
+    padding: 15px;
+    padding-top:0;
+    flex-basis: 25%;
+    
+}
+
+
+    .product__image {
+        width:100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+
+       
+    }
+
+    .product_name{
+        margin:0 0 5px 0;
+        color:#595959;
+        font-weight: normal;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .product_prize{
+        margin:0;
+        color:#595959;
+        font-weight:normal;
+        font-size: 14px;
+        padding-left:12px;
+    }
+
+/*END PRODUCT BLOCK*/
+
+
+
+/*SUPORTS BLOCK*/
+
+.supports{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:25px 0 40px 0;
+}
+
+.support {
+    flex-basis:30%;
+    padding: 15px;
+
+}
+    .support.support--green {
+        background-color:#1bbc9b;
+    }
+
+        .support--green .support__title {
+            color:#125d4d;
+        }
+
+        .support--green .support__description {
+            color:#167b66;
+        }
+
+    .support.support--red {
+        background-color:#fa5c5b;
+    }
+
+        .support--red .support__title {
+            color:#662b2a;
+        }
+        .support--red .support__description {
+            color:#913333;
+        }
+
+    .support.support--purple {
+        background-color: #cd7dff;
+    }
+
+        .support--purple .support__title {
+            color: #513066;
+        }
+    
+        .support--purple .support__description {
+            color:#784a95;
+        }
+    .support__image {
+        float:left;
+        width:30%;
+        border-radius:40%;
+    }
+@media (max-width:1084px) and (min-width:769px) {
+
+    .support {
+        flex-basis: 33%;
+        margin-top:16px;
+        font-size:50px;
+        text-transform: uppercase;
+    }
+
+        .support__image {
+            float:none;
+        } 
+
+        .support__title {
+            font-size: 16px;
+        }
+
+        .support__description {
+            font-size:18px;
+        }
+
+    .title__description {
+        text-align: center;
+    }
+
+
+
+}
+      .support__title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin:0;
+    }
+
+        .support__description {
+            margin:10px 0 0 0;
+            font-weight: normal;
+            font-size: 20px;
+        
+    }
+
+ 
+
+/*END SUPPORTS BLOCK*/
+
+/*START ASIDE BLOCK*/
+
+    .form {
+         display:flex;
+         flex-wrap:wrap;
+         justify-content: space-between;
+         margin-top:25px;
+         text-align: center;
+}
+
+        .contact {
+            flex-basis: 68%;
+            margin-right:10px;
+            background-color: #535353;
+            min-height: 360px;
+            text-align: center;
+            padding:80px;
+        }
+
+            .contact__title {
+                color:#fff;
+                font-size: 50px;
+                text-transform: uppercase;
+                margin:0;
+            }
+
+
+            .contact__subtitle {
+                color:#f6f6f6;
+                font-size:14px;
+                font-weight: normal;
+                margin:0;
+                padding:14px;
+
+            }
+
+            .contact__button {
+                text-transform: uppercase;
+                display:inline-block;
+                padding:6px 23px;
+                background: none;
+                background-color:#fff;
+                color:#535353;
+                border-radius:9px;
+                text-decoration: none;
+                margin-top:12px;
+                transition: 0.3s all ease-in-out color #fff;
+               
+            }
+
+                .contact__button:hover {
+                    border:solid #fff 2px;
+                    background-color: #fff;
+                    color:#535353;
+
+                }
+
+        .subscribe {;
+            min-height:360px;
+            flex-basis:30%;
+            background-color: #535353;
+            text-align: center;
+            padding:60px 40px;
+            
+        }
+
+            .subscribe__title {
+                color:#cdcdcd;;
+                font-size: 20px;
+                margin:0;
+                padding-bottom:40px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+             }
+
+            .subscribe__subtitle {
+                color:#cdcdcd;
+                font-weight: normal;
+                margin:0;
+                font-size: 11px;
+            }
+
+                .subscribe__subtitle span {
+                    color:#c2185b;
+                    font-weight: bold;
+                    font-size: 19px;
+                    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+                }
+
+            .subscribe__address {
+                color:#cdcdcd;
+                border-radius:dashed line black;
+                border:dotted 1px #fff;
+                border-radius:5px;
+                padding:7px;
+                text-align:left;
+                font-weight:normal;
+                font-style: italic;
+            }
+
+            .subscribe__button {
+                text-transform: uppercase;
+                display:inline-block;
+                padding:6px 23px;
+                background: none;
+                background-color: #ff4081;
+                color:#fff;
+                border-radius:9px;
+                text-decoration: none;
+                margin-top:12px;
+                transition: 0.3s all ease-in-out color #fff;
+            }
+
+                .subscribe__button:hover {
+                    border:solid #fff 2px;
+                    background-color: #fff;
+                    color:#535353;
+
+                }
+/*END ASIDE BLOCK*/
+
+
+/*START FOOTER */
+  .contentinfo {
+      background-color: #232323;
+      padding:70px 0;
+      margin-top:20px;
+      display: inline-block;
+      min-height:350px;
+      width:100%;
+  }
+    
+
+    .contentinfo__left {
+        float:left;
+        width:50%;
+    }
+
+        .contentinfo__picture {
+        
+        }
+
+        .contentinfo__paragraf {
+            color:#cfcfcf;
+            font-weight:normal;
+            padding-top:16px;
+            margin:0;
+            letter-spacing: 1px;
+            font-size: 10px;
+        }
+
+    .contentinfo__right {
+        float:right;
+        color:#fff;
+        position:relative;
+    }
+
+        .contentinfo__title {
+            text-transform:uppercase;
+            font-size:16px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            padding-left:50px;
+            color:#cecece;
+            font-size:15px;
+         }
+        p span {
+            color:#ff4081;
+            text-transform: uppercase;
+        }
+
+        .contentinfo__location {
+            position:relative;
+        }
+
+            .icon-location {
+                position:absolute;
+                color:#cecece;
+            }
+
+        .contentinfo__mobile {
+            position:relative;
+        }
+            
+            .icon-mobile {
+                position:absolute;
+                color:#cecece;
+            }
+
+        .contentinfo__envelop {
+            position:relative;
+
+        }
+
+            .icon-envelop {
+                position:absolute;
+                color:#cecece;
+            }
+
+        .contentinfo__clock {
+            position:relative;
+        }
+
+            .icon-clock {
+                position:absolute;
+                color:#cecece;
+            }
+
+
+
+/*END FOOTER*/
+
+/*MAKING RESPONSIVE LAYOUTS*/
+
+/*mobile phone design*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    wrap {
+        margin:0;
+     }
+
+     .hero {
+         background-image: url("../images/photo.jpg");
+         background-repeat:no-repeat;
+         background-size: cover;
+         position:relative;
+         object-fit: cover;
+         object-position: center
+
+     }
+
+     .hero__info {
+         position:absolute;
+         bottom: -13px;
+     }
+        .hero__info__title {
+            color:grey;
+            font-size: 45px;
+            text-transform:uppercase;
+        }
+
+        .hero__info__subtitle {
+            display: none;
+        }
+
+    .product {
+    flex-basis: 50%;
+}
+
+    .product_name {
+        font-size:20px;
+        padding:0;
+    }
+
+    .product_prize {
+        font-size:15px;
+        padding:0;
+    }
+
+    .support.support.support--green {
+
+        min-height:auto;
+        flex-basis: 100%;
+       
+    }
+
+    .support.support--red {
+
+        min-height:auto;
+        flex-basis: 100%;
+        margin-top:20px;
+    }
+
+    .support.support--purple {
+
+        min-height:auto;
+        flex-basis: 100%;
+        margin-top:20px;
+    }
+
+    .support__title {
+        font-size: 30px;
+    }
+
+         .title__description {
+                float:right;
+                margin:25px 36px 0 0;
+            }
+    
+
+    .contact {
+       flex-basis: 100%;
+       margin-right:0;
+       min-height:auto;
+       padding:50px;
+    }
+
+        .contact__title {
+            font-size: 23px;
+        }
+
+    .subscribe {
+        margin-top:12px;
+        flex-basis: 100%;
+        min-height:auto;
+        padding:50px;
+    }
+
+        .subscribe__title {
+            font-size: 16px;
+        }
+
+    .contentinfo {
+        padding:30px 0;
+    }
+
+        .contentinfo__left {
+            width: 100%;
+            min-height:auto;
+        }
+
+        .contentinfo__title {
+            text-align: center;
+        }
+
+        .contentinfo__right {
+            width:100%;
+            min-height: auto;
+        }
+
+        .contentinfo__right p {
+            font-size: 12px;
+        }
+
+
+}
+
+@media only screen and (max-width:480px) {
+
+    .navigation {
+        float:right;
+        padding: 25px 25px 25px 25px;
+        cursor: crosshair;
+}
+
+    .hero {
+        margin-top:43px;
+        min-height:100px;
+        position:relative;
+        background-image: url("../images/mm.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+
+    }
+
+        .hero__info {
+        position: absolute;
+        bottom:-9px;
+
+    }
+
+            .hero__info__title {
+            color:white;
+            font-size: 30px;
+            text-transform:uppercase;
+        }
+
+             .hero__info__subtitle {
+            display: none;
+        }
+
+    .product {
+    flex-basis: 100%;
+}
+
+        .product_name {
+        font-size:20px;
+        padding:0;
+    }
+
+        .product_prize {
+        font-size:15px;
+        padding:0;
+    }
+    
+        .support.support.support--green {
+
+            min-height:auto;
+            flex-basis: 100%;
+        
+        }
+
+        .support.support--red {
+
+            min-height:auto;
+            flex-basis: 100%;
+            margin-top:20px;
+        }
+
+        .support.support--purple {
+
+            min-height:auto;
+            flex-basis: 100%;
+            margin-top:20px;
+        }
+
+        .support__title {
+            font-size: 20px;
+        }
+
+            .title__description {
+                float:right;
+            }
+    
+    .contact {
+        min-height:auto;
+        flex-basis:100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+        padding: 35px;
+    }
+    
+        .contact__title, .contact__subtitle {
+            display: none;
+        }
+    
+
+    .subscribe{
+        flex-basis: 100%;
+        min-height: auto;
+        padding: 20px 40px 0 40px;
+    }
+
+        .subscribe__title, .subscribe__subtitle, .subscribe__subtitle-span {
+            display: none;
+        }
+
+        .subscribe__button  {
+            margin-bottom: 30px;
+        }
+
+
+    .contentinfo__picture {
+        display: none;
+    }
+
+    .contentinfo__paragraf {
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+/*END MAKING RESPONSIVE LAYOUTS*/
