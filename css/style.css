@@ -211,7 +211,9 @@ ul {
 
 .support {
     flex-basis:30%;
-    padding: 15px;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
 
 }
     .support.support--green {
@@ -248,11 +250,7 @@ ul {
         .support--purple .support__description {
             color:#784a95;
         }
-    .support__image {
-        float:left;
-        width:30%;
-        border-radius:40%;
-    }
+  
 @media (max-width:1084px) and (min-width:769px) {
 
     .support {
@@ -532,7 +530,7 @@ ul {
 
      .hero__info {
          position:absolute;
-         bottom: -13px;
+         bottom: -11px;
      }
         .hero__info__title {
             color:grey;
@@ -558,7 +556,7 @@ ul {
         padding:0;
     }
 
-    .support.support.support--green {
+    .support.support--green {
 
         min-height:auto;
         flex-basis: 100%;
@@ -580,12 +578,18 @@ ul {
     }
 
     .support__title {
-        font-size: 30px;
+
+        font-size: 36px;
+    }
+
+    .support__description {
+
+        font-size:28px;
     }
 
          .title__description {
-                float:right;
-                margin:25px 36px 0 0;
+
+               margin:0 auto;
             }
     
 
@@ -684,7 +688,7 @@ ul {
         padding:0;
     }
     
-        .support.support.support--green {
+        .support.support--green {
 
             min-height:auto;
             flex-basis: 100%;
@@ -707,10 +711,11 @@ ul {
 
         .support__title {
             font-size: 20px;
+            text-align: center;
         }
 
             .title__description {
-                float:right;
+            text-align: center;
             }
     
     .contact {
