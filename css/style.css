@@ -1,3 +1,4 @@
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
  html {
   box-sizing: border-box;
 }
@@ -45,10 +46,6 @@
 .icon-mobile:before {
   content: "\e958";
 }
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
-
 
 
  body {
@@ -214,42 +211,31 @@ ul {
     padding: 40px 0;
     text-align: center;
     font-size: 28px;
+    position: relative;
+    background-color:#1bbc9b;
+    font-family: "Open Sans", sans-serif;
+    color:#595959;
+    overflow: hidden;
 
 }
-    .support.support--green {
-        background-color:#1bbc9b;
+
+.support:before {
+    content: attr(data-broj);
+    font-size:100px;
+    position:absolute;
+    left:10px;
+    top:10px;
+    opacity:0.3;
+    transition: 0.3s ease-in-out;
+
+}
+
+.support:hover:before {
+    opacity: 0.7;
+    transform: translate3d(10px, 0,0);
+    font-size: 200px;
     }
-
-        .support--green .support__title {
-            color:#125d4d;
-        }
-
-        .support--green .support__description {
-            color:#167b66;
-        }
-
-    .support.support--red {
-        background-color:#fa5c5b;
-    }
-
-        .support--red .support__title {
-            color:#662b2a;
-        }
-        .support--red .support__description {
-            color:#913333;
-        }
-
-    .support.support--purple {
-        background-color: #cd7dff;
-    }
-
-        .support--purple .support__title {
-            color: #513066;
-        }
     
-        .support--purple .support__description {
-            color:#784a95;
-        }
   
 @media (max-width:1084px) and (min-width:769px) {
 
@@ -386,7 +372,7 @@ ul {
                 }
 
             .subscribe__address {
-                color:#cdcdcd;
+                color:rgb(80, 49, 49);
                 border-radius:dashed line black;
                 border:dotted 1px #fff;
                 border-radius:5px;
@@ -394,6 +380,7 @@ ul {
                 text-align:left;
                 font-weight:normal;
                 font-style: italic;
+                margin-top:10px;
             }
 
             .subscribe__button {
@@ -405,7 +392,7 @@ ul {
                 color:#fff;
                 border-radius:9px;
                 text-decoration: none;
-                margin-top:12px;
+                margin:12px;
                 transition: 0.3s all ease-in-out color #fff;
             }
 
